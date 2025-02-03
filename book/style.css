@@ -10,7 +10,6 @@
 body {
     width:100%;  
     margin:0;
-    padding: 0;
     height: 100vh;
     text-align: center;
     background-color: #000;
@@ -319,7 +318,7 @@ body > div > div.hero{
 
 /* 동영상 화면 */
 .hero video {
-    margin-top: 23px;
+    margin-top:23px;
     position: absolute;
     width: 100%;
     /*min-width: 100%;*/
