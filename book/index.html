@@ -11,7 +11,13 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="description" content="직지35회">
         <title>☏ 직지35</title>
-        
+      
+
+
+      <!-- 비밀번호 검증 관문   -->
+      <!-- pass.js파일에서 비밀번호 관리!! -->
+      <!-- 아래 255라인, 268라인 부근에 "입출금내역서(test)", "납입금현황(test)" 해당 링크가 걸려있다. -->
+      <script src="js/pass.js"></script> <!-- 📌 외부 JavaScript 파일 로드 -->
 
       <link
       rel="apple-touch-icon"
@@ -245,17 +251,25 @@
           <!--  황악회 입출금내역서 (style.css도 포함)-->
           <!--  구글스프레드시트에서 gagebu.xlsx파일과 동기화 시켜서 구글시트 파일에서 수정하면 웹페이지에서도 수정된다. 만약에 파일명이 바뀐다면 구글
           스프레드시트에서 웹게시를 해서 코드를 다시 받아야만 연동시킬수있다.  -->
-          <li><a class="btn btn-primary text-bg-secondary p-2" id="gagebu" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTGhqELrLq35IHnMsXOk5QiEB3j9vQc7mJCSycngGTSYzZbQJ4M9RkMupUPUaTzS8ut2HsdC3IjEhhx/pubhtml" role="button">입출금내역서(test)</a></li>
-          
-          
+          <!-- 비밀번호 검증 관문을 통과하면 이곳으로 이동   -->
+          <li>
+            <a class="btn btn-primary text-bg-secondary p-2" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTGhqELrLq35IHnMsXOk5QiEB3j9vQc7mJCSycngGTSYzZbQJ4M9RkMupUPUaTzS8ut2HsdC3IjEhhx/pubhtml" onclick="return checkPassword()">
+                입출금내역서(test)
+            </a>
+          </li>
+
+
           
           
           <!--  황악회원 입금현황 (style.css도 포함)-->
           <!--  구글스프레드시트에서 gagebu.xlsx파일과 동기화 시켜서 구글시트 파일에서 수정하면 웹페이지에서도 수정된다. 만약에 파일명이 바뀐다면 구글
           스프레드시트에서 웹게시를 해서 코드를 다시 받아야만 연동시킬수있다.  -->
-          <li><a class="btn btn-primary text-bg-secondary p-1" id="gagebu_1"  href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_siRAwNp9PlsyQR2oLPwdvwbXLN5wX2YW0ZL8aBEz0WnhBNlnssZ0E3gztRxopw/pubhtml" role="button">납입금현황(test)</a></li>
-
-
+          <!-- 비밀번호 검증 관문을 통과하면 이곳으로 이동   -->
+          <li>
+            <a class="btn btn-primary text-bg-secondary p-1" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_siRAwNp9PlsyQR2oLPwdvwbXLN5wX2YW0ZL8aBEz0WnhBNlnssZ0E3gztRxopw/pubhtml" onclick="return checkPassword()">
+              납입금현황(test)
+            </a>
+        </li>
 
   				</div>
 			</div>
